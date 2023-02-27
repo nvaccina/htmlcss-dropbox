@@ -131,10 +131,9 @@ button{
   width: 60%;
   min-width: 1000px;
   margin: 0 auto;
-
 }
 section{
-  padding: 30px 0;
+  margin: 30px 0;
 }
 .tariffe{
   margin-top: 50px;
@@ -192,18 +191,37 @@ section{
   text-decoration: none;
   padding: 5px 50px;
 }
-
-
-
-
 .partner{
-  height: 300px;
-  border: 1px solid black;
+  height: 475px;
+}
+.image-partner{
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+.image-partner img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .text-partner{
   width: 50%;
-  padding: 20px;
+  padding: 60px;
 }
+.text-partner p{
+  margin-bottom: 30px;
+}
+.text-partner a{
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+}
+
+
+
+
 .operazioni{
   flex-wrap: wrap;
 }
