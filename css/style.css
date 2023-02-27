@@ -53,7 +53,7 @@ i{
 header{
   position: fixed;
   justify-content: space-between;
-  height: 60px;
+  height: 70px;
   width: 100%;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ header{
   height: 100%;
 }
 .menu-sx img{
-  height: 20px;
+  height: 25px;
   
 }
 .lista-menu{
@@ -91,7 +91,7 @@ button{
 }
 /*JUMBOTRON*/
 .jumbotron{
-  margin: 60px 0;
+  margin: 70px 0;
   height: 600px;
   background-color: #B4D0E7;
 }
@@ -133,7 +133,7 @@ button{
   margin: 0 auto;
 }
 section{
-  margin: 30px 0;
+  margin: 60px 0;
 }
 .tariffe{
   margin-top: 50px;
@@ -220,17 +220,15 @@ section{
 }
 
 
-
-
 .operazioni{
   flex-wrap: wrap;
 }
 .card{
-  width: calc(100% / 3 - 20px);
-  height: 300px;
-
-  margin: 10px;
-  border: 1px solid black;
+  width: calc(100% / 3);
+  padding: 20px;
+}
+.card img{
+  width: 100%;
 }
 
 .clienti{
