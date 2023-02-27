@@ -7,6 +7,9 @@
 body{
   font-family: 'Noto Sans', sans-serif;
 }
+i{
+  padding-right: 5px;
+}
 .d-flex{
   display: flex;
 }
@@ -33,11 +36,18 @@ body{
 .light-grey{
   color: #637381;
 }
+.b-light-grey{
+  border: 1px solid #D0D0D3;
+}
 .p-20px{
   padding: 20px 0;
 }
 .p-10px{
   padding: 10px 0;
+}
+.h3-style{
+  font-size: 22px;
+  font-weight: bold;
 }
 /*HEADER*/
 header{
@@ -138,7 +148,7 @@ section{
   padding: 30px 0;
 }
 .col{
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3);
   margin-right: 20px;
 }
 .colonne:last-child{
@@ -148,16 +158,11 @@ section{
   align-items: center;
   justify-content: center;
   height: 40px;
-  border: 1px solid #D0D0D3;
+  border-bottom: 1px solid #D0D0D3;
 }
 .offerta{
   padding: 0 20px;
-  border: 1px solid #D0D0D3;
   height: 900px;
-}
-.offerta h3{
-  font-size: 22px;
-  font-weight: bold;
 }
 .offerta nav ul{
   list-style: none;
@@ -169,17 +174,27 @@ section{
 }
 .divisorio{
   width: 50px;
-  border: 1px solid #D0D0D3;
   margin: 30px 0 40px;
+  border-bottom: 1px solid #D0D0D3;
 }
-
-
 .ufficio-vendite{
-  padding: 20px;
-  
+  margin: 20px 0;
   height: 200px;
-  border: 1px solid black;
 }
+.contatta-ufficio{
+  position: relative;
+  padding-left: 20px;
+}
+.contatto a{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  padding: 5px 50px;
+}
+
+
+
 
 .partner{
   height: 300px;
