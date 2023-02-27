@@ -30,6 +30,9 @@ body{
 .blue{
   color: #0061FF;
 }
+.light-grey{
+  color: #637381;
+}
 .p-20px{
   padding: 20px 0;
 }
@@ -135,11 +138,11 @@ section{
   padding: 30px 0;
 }
 .col{
-  width: calc(100% / 3);
-  padding-right: 0 20px;
-
-  height: 900px;
-  border: 1px solid black;
+  width: calc(100% / 3 - 20px);
+  margin-right: 20px;
+}
+.colonne:last-child{
+  margin-right: 0;
 }
 .utente{
   align-items: center;
@@ -149,6 +152,12 @@ section{
 }
 .offerta{
   padding: 0 20px;
+  border: 1px solid #D0D0D3;
+  height: 900px;
+}
+.offerta h3{
+  font-size: 22px;
+  font-weight: bold;
 }
 .offerta nav ul{
   list-style: none;
