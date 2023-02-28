@@ -62,7 +62,6 @@ i{
   font-size: 25px;
   font-weight: bold;
 }
-
 /*HEADER*/
 header{
   position: fixed;
@@ -74,26 +73,67 @@ header{
   z-index: 999;
   background-color: white;
 }
-.menu-sx, .menu-dx{
+.menu{
   align-items: center;
   padding: 0 20px;
   height: 100%;
 }
-.menu-sx img{
+.menu.sx img{
   height: 25px;
 }
 .lista-menu{
   text-align: center;  
+  height: 100%;
 }
 .lista-menu ul{
   list-style: none;
+}
+.lista-menu ul li{
   align-items: center;
+  height: 100%;
+}
+.lista-menu ul li:hover{
+  cursor: pointer;
+  border-bottom: 1px solid black;
 }
 .lista-menu ul li a{
   padding: 0 25px;
   text-decoration: none;
   color: black;
 }
+.dropdown{
+  position: relative;
+  height: 15px;
+  overflow: hidden;
+}
+.dropdown-menu{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.dropdown-menu li{
+  text-align: left;
+  width: 230px;
+  padding: 10px;
+}
+.dropdown:hover .dropdown-menu{
+  top: 70px;
+  opacity: 1;
+}
+.dropdown:hover{
+  overflow: visible;
+}
+.dropdown-menu li:hover{
+  background-color: #ECEBEA;
+}
+
+
+
+
 button{
   padding: 5px 15px;
   border: none;
@@ -154,6 +194,9 @@ section{
 .tipo-fatturazione{
   padding: 30px 0;
 }
+.check{
+  padding-left: 20px;
+}
 .col{
   width: calc(100% / 3);
   margin-right: 20px;
@@ -173,6 +216,7 @@ section{
 }
 .offerta nav ul{
   list-style: none;
+  padding-top: 10px;
 }
 .offerta button{
   width: 100%;
@@ -181,7 +225,7 @@ section{
 }
 .divisorio{
   width: 50px;
-  margin: 30px 0 40px;
+  margin: 20px 0 40px;
   border-bottom: 1px solid #D0D0D3;
 }
 .ufficio-vendite{
@@ -343,6 +387,7 @@ footer{
   background-color: black;
 }
 .menu-footer{
+  justify-content: space-between;
   padding: 70px 0;
 }
 .menu-footer nav span{
@@ -358,4 +403,16 @@ footer{
 .menu-footer ul li a{
   text-decoration: none;
   color: white;
+}
+.divisorio-footer{
+  width: 100px;
+  margin: 30px 0 40px;
+  border-bottom: 1px solid #BFBFBF;
+}
+.lingua{
+  color: #666666;
+  cursor: pointer;
+}
+.lingua:first-child{
+  color: #999999;
 }

@@ -18,26 +18,33 @@
 
   <header class="d-flex">
 
-    <div class="menu-sx d-flex">
+    <div class="menu sx d-flex">
 
       <img src="img/logo-small.png" alt="Logo Dropbox">
 
-      <nav class="lista-menu t-14px">
+      <nav class="lista-menu d-flex t-14px">
         <ul class="d-flex">
-          <li><a href="#">Perchè Dropbox?</a></li>
-          <li><a href="#">Funzioni</a></li>
-          <li><a href="#">Piani e prezzi</a></li>
+          <li class="d-flex"><a href="#">Perchè Dropbox?</a></li>
+          <li class="d-flex"><a href="#">Funzioni</a></li>
+          <li class="d-flex"><a href="#">Piani e prezzi</a></li>
         </ul>
       </nav>
 
     </div>
 
-    <div class="menu-dx d-flex t-14px">
-      <nav class="lista-menu">
+    <div class="menu d-flex t-14px">
+      <nav class="lista-menu d-flex">
         <ul class="d-flex">
-          <li><a href="#">Supporto</a></li>
-          <li><a href="#">Contatta l'ufficio vendite</a></li>
-          <li><a href="#">Accedi</a></li>
+          <li class="dropdown d-flex">
+            <a href="#">Supporto</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Centro assistenza</a></li>
+              <li><a href="#">Forum della community</a></li>
+            </ul>
+          </li>
+
+          <li class="d-flex"><a href="#">Contatta l'ufficio vendite</a></li>
+          <li class="d-flex"><a href="#">Accedi</a></li>
         </ul>
       </nav>
       <button class="button-blue">Inizia</button>
@@ -80,7 +87,7 @@
           <i class="fa-solid fa-circle-dot blue"></i> 
           <span>Fatturazione mensile</span>
 
-          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle check"></i>
           <span>Fattuazione annuale</span>
         </div>        
 
@@ -103,31 +110,31 @@
                     <i class="fa-regular fa-user"></i>
                     <span>1 Utente</span>
                   </li>
-                  <li class="p-20px">
+                  <li class="p-20px d-flex">
                     <i class="fa-regular fa-folder"></i>
                     <span>3 T di spazio di archiviazione sicuro</span>
                   </li>
-                  <li class="p-20px">
+                  <li class="p-20px d-flex">
                     <i class="fa-solid fa-pencil"></i>
                     <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                   </li>
                 </ul>
               </nav>
               
-              <button class="button-blue p-20px">Prova gratis per 30 giorni</button>
+              <button class="button-blue">Prova gratis per 30 giorni</button>
 
-              <span>Oppure<a href="#">acquista ora</a></span>
+              <p class="p-20px">Oppure<a href="#">acquista ora</a></p>
 
               <div class="divisorio b-light-grey t-15px"></div>
 
               <nav class="punti-salienti p-20px">
                 <h4>Punti salienti del piano</h4>
                 <ul>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Invia file fino a 100 GB con Dropbox Transfert</span> 
                   </li>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Cartelle ofline su dispositivi mobili</span>
                   </li>
@@ -139,7 +146,7 @@
                     <i class="fa-solid fa-check blue"></i>
                     <span>Filigrana documento</span> 
                   </li>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Assistenza prioritaria via email e chat </span> 
                   </li>
@@ -167,11 +174,11 @@
                     <i class="fa-solid fa-user-plus"></i>
                     <span>1 utente</span>
                   </li>
-                  <li class="p-20px">
+                  <li class="p-20px d-flex">
                     <i class="fa-regular fa-folder"></i>
                     <span>3 T di spazio di archiviazione sicuro</span>
                   </li>
-                  <li class="p-20px">
+                  <li class="p-20px d-flex">
                     <i class="fa-regular fa-face-smile"></i>
                     <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                   </li>
@@ -180,18 +187,18 @@
               
               <button class="button-blue p-20px">Prova gratis per 30 giorni</button>
 
-              <span>Oppure<a href="#">acquista ora</a></span>
+              <p class="p-20px">Oppure<a href="#">acquista ora</a></p>
 
               <div class="divisorio b-light-grey t-15px"></div>
 
               <nav class="punti-salienti p-20px">
                 <h4>Punti salienti del piano</h4>
                 <ul>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Invia file fino a 100 GB con Dropbox Transfert</span> 
                   </li>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Cartelle ofline su dispositivi mobili</span>
                   </li>
@@ -203,11 +210,11 @@
                     <i class="fa-solid fa-check blue"></i>
                     <span>Filigrana documento</span> 
                   </li>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Assistenza prioritaria via email e chat </span> 
                   </li>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Assistenza prioritaria via email e chat </span> 
                   </li>
@@ -235,11 +242,11 @@
                     <i class="fa-solid fa-user-plus"></i>
                     <span>1 utente</span>
                   </li>
-                  <li class="p-20px">
+                  <li class="p-20px d-flex">
                     <i class="fa-regular fa-face-smile"></i>
                     <span>3 T di spazio di archiviazione sicuro</span>
                   </li>
-                  <li class="p-20px">
+                  <li class="p-20px d-flex">
                     <i class="fa-solid fa-pencil"></i>
                     <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                   </li>
@@ -248,18 +255,18 @@
               
               <button class="button-blue p-20px">Prova gratis per 30 giorni</button>
 
-              <span>Oppure<a href="#">acquista ora</a></span>
+              <p class="p-20px">Oppure<a href="#">acquista ora</a></p>
 
               <div class="divisorio b-light-grey t-15px"></div>
 
               <nav class="punti-salienti p-20px">
                 <h4>Punti salienti del piano</h4>
                 <ul>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Invia file fino a 100 GB con Dropbox Transfert</span> 
                   </li>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Cartelle ofline su dispositivi mobili</span>
                   </li>
@@ -271,7 +278,11 @@
                     <i class="fa-solid fa-check blue"></i>
                     <span>Filigrana documento</span> 
                   </li>
-                  <li class="p-10px">
+                  <li class="p-10px d-flex">
+                    <i class="fa-solid fa-check blue"></i>
+                    <span>Assistenza prioritaria via email e chat </span> 
+                  </li>
+                  <li class="p-10px d-flex">
                     <i class="fa-solid fa-check blue"></i>
                     <span>Assistenza prioritaria via email e chat </span> 
                   </li>
@@ -478,16 +489,58 @@
 
   </main>
 
-  <!--FOOTER 4-->
+  <!--FOOTER-->
   <footer>
     <div class="container">
       <div class="menu-footer d-flex">
 
         <nav>
-          <span><strong>Dropbox</strong></span>
-          
-          <ul>
-            
+          <span><strong>Dropbox</strong></span>          
+          <ul>            
+            <li class="p-4px"><a class="t-13px" href="#">Applicazione desktop</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Perchè Dropbox</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Piani</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Sicurezza</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Funzioni</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <span><strong>Prodotti</strong></span>          
+          <ul>            
+            <li class="p-4px"><a class="t-13px" href="#">Applicazione desktop</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Perchè Dropbox</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Piani</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Sicurezza</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Funzioni</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <span><strong>Azienda</strong></span>          
+          <ul>            
+            <li class="p-4px"><a class="t-13px" href="#">Applicazione desktop</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Perchè Dropbox</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Piani</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Sicurezza</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Funzioni</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <span><strong>Supporto</strong></span>          
+          <ul>            
+            <li class="p-4px"><a class="t-13px" href="#">Applicazione desktop</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Perchè Dropbox</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Piani</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Sicurezza</a></li>
+            <li class="p-4px"><a class="t-13px" href="#">Funzioni</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <span><strong>Community</strong></span>          
+          <ul>            
             <li class="p-4px"><a class="t-13px" href="#">Applicazione desktop</a></li>
             <li class="p-4px"><a class="t-13px" href="#">Perchè Dropbox</a></li>
             <li class="p-4px"><a class="t-13px" href="#">Piani</a></li>
@@ -498,7 +551,13 @@
 
       </div>
 
-      <div class="divisorio white"></div>      
+      <div class="divisorio-footer"></div>
+      
+      <div class="lingua">
+        <i class="fa-solid fa-earth-europe"></i>
+        <span>Italiano</span>
+        <i class="fa-solid fa-caret-up"></i>
+      </div>
 
     </div>
     
