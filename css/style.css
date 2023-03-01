@@ -78,6 +78,7 @@ header{
   left: 0;
   z-index: 999;
   background-color: white;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
 }
 .menu{
   align-items: center;
@@ -96,15 +97,15 @@ header{
 .lista-menu ul li{
   align-items: center;
   height: 100%;
+  border-bottom: 2px solid white;
 }
 .lista-menu ul li:hover{
   cursor: pointer;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 .lista-menu ul li a{
   text-decoration: none;
   color: black;
- 
 }
 .dropdown{
   position: relative;
@@ -124,6 +125,13 @@ header{
   text-align: left;
   width: 230px;
   padding: 10px;
+  border-bottom: none;
+}
+.dropdown-menu li:first-child{
+  margin-top: 20px;
+}
+.dropdown-menu li:last-child{
+  margin-bottom: 20px;
 }
 .dropdown:hover .dropdown-menu{
   top: 70px;
@@ -132,7 +140,10 @@ header{
 .dropdown:hover{
   overflow: visible;
 }
-.dropdown-menu li:hover{
+.lista-menu .dropdown .dropdown-menu li{
+  border-bottom: none;
+}
+.lista-menu .dropdown .dropdown-menu li:hover{
   background-color: #ECEBEA;
 }
 button{
@@ -184,9 +195,6 @@ button{
 }
 .arrow-action:hover{
   cursor: pointer;
-}
-.arrow-action:active{
-  content: 
 }
 /*MAIN*/
 .container{
@@ -407,8 +415,6 @@ section{
 .domanda:hover .drop{
   display: block;  
 }
-
-  
 /*FOOTER*/
 footer{
   height: 500px;
@@ -437,6 +443,9 @@ footer{
 .menu-footer ul li a{
   text-decoration: none;
   color: white;
+}
+.menu-footer ul li a:hover{
+  text-decoration: underline;
 }
 .divisorio-footer{
   width: 100px;
