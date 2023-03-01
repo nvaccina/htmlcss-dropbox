@@ -18,7 +18,7 @@ i{
 }
 .container{
   width: 80%;
-  min-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .t-13px{
@@ -62,7 +62,7 @@ i{
   font-weight: bold;
 }
 .h3-style{
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
 }
 .white{
@@ -88,7 +88,6 @@ header{
   height: 25px;
 }
 .lista-menu{
-  text-align: center;  
   height: 100%;
 }
 .lista-menu ul{
@@ -105,6 +104,7 @@ header{
 .lista-menu ul li a{
   text-decoration: none;
   color: black;
+ 
 }
 .dropdown{
   position: relative;
@@ -151,7 +151,7 @@ button{
 }
 .jumbo{
   position: relative;
-  top: 50px;
+  top: 60px;
   width: 70%;
   max-width: 1100px;
   margin: 0 auto;
@@ -163,6 +163,9 @@ button{
 .contain{
   padding-top: 40px;
 }
+.jumbo-text{
+  width: 30%;
+}
 .jumbo-text p{
   padding-bottom: 20px;
 }
@@ -170,11 +173,14 @@ button{
   margin-bottom: 10px;
 }
 .img{
+  overflow: hidden;
   text-align: center;
+  width: 70%;
 }
 .img img{  
-  width: 60%;
-  min-width: 600px;
+  object-fit: cover;
+  width: 100%;  
+  min-width: 500px;
 }
 .arrow-action:hover{
   cursor: pointer;
@@ -222,7 +228,7 @@ section{
 }
 .offerta{
   padding: 0 20px;
-  height: 1000px;
+  height: 1100px;
 }
 .offerta nav ul{
   list-style: none;
@@ -269,7 +275,7 @@ section{
 }
 .text-partner{
   width: 50%;
-  padding: 60px;
+  padding: 50px;
 }
 .text-partner p{
   margin-bottom: 30px;
@@ -285,8 +291,12 @@ section{
   flex-wrap: wrap;
 }
 .card{
-  width: calc(100% / 3);
-  padding: 20px;
+  width: calc(100% / 3 - 40px);
+  margin-right: 40px;
+  padding-bottom: 60px;
+}
+.card:nth-of-type(3n + 3){
+  margin-right: 0;
 }
 .card img{
   width: 100%;
@@ -296,31 +306,29 @@ section{
   text-align: left;
 }
 .clienti{
-  height: 800px;
+  height: 700px;
 }
 .team{
-  height: 500px;
+  height: 400px;
 }
 .aziende{
-  flex-wrap: wrap;
   width: 30%;
-  height: 100%;
+  height: auto;
 }
 .aziende .image-team{
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   width: 50%;
   height: 50%;
 }
 .image-team img{
-  width: 150px;
+  max-width: 100px;
   object-fit: cover;
   color: white;
   filter: invert(1);
 }
-.image-team:hover{
-  border: 10px solid rgba(0, 0, 0, 0.3);
+.image-team:active{
+  border: 10px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .red{
@@ -355,7 +363,7 @@ section{
   background-color: #F5F5F5;
 }
 .info-team img{
-  width: 150px;
+  max-width: 150px;
 }
 .info-team p{
   padding-bottom: 30px;
@@ -406,6 +414,11 @@ footer{
   height: 500px;
   color: white;
   background-color: black;
+}
+.footer-container{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .menu-footer{
   justify-content: space-between;
