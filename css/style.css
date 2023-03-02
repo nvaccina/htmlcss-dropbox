@@ -168,7 +168,7 @@ button{
   margin: 0 auto;
 }
 .jumbo h1{
-  font-size: 60px;
+  font-size: 65px;
   font-weight: bold;
 }
 .contain{
@@ -192,6 +192,9 @@ button{
   object-fit: cover;
   width: 100%;  
   min-width: 500px;
+}
+.arrow-action{
+  color: black;
 }
 .arrow-action:hover{
   cursor: pointer;
@@ -313,15 +316,12 @@ section{
   width: 600px;
   text-align: left;
 }
-.clienti{
-  height: 700px;
-}
 .team{
-  height: 400px;
+  height: 30vw;
 }
 .aziende{
   width: 30%;
-  height: auto;
+  height: 30vw;
 }
 .aziende .image-team{
   align-items: center;
